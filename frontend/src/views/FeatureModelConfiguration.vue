@@ -673,6 +673,7 @@ export default Vue.extend({
             this.features = this.featureModel.features;
 
             this.featureModel.loadXmlData(this.featureModel.versions[0]);
+            console.log("test")
             this.selectedVersion = this.featureModel.versions[0];
             this.initialResetCommand = new ResetCommand(this.featureModel);
             this.initialResetCommand.execute();
